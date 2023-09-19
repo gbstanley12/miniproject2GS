@@ -4,11 +4,6 @@
 
 import pandas as pd
 
-df = pd.dataframe(
-    {
+data = pd.read_csv('artists.csv', index_col='Artist')
 
-
-
-    }
-
-)
+print(data['Streams'].describe())
