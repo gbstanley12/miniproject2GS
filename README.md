@@ -21,4 +21,4 @@ python main.py
 The provided CSV file contains data for the top 3000 artists from Spotify. You can use this dataset to explore various aspects of artist popularity and streaming data.
 
 ## Input Your Own Artists
-You can easily input your own artists for comparison by modifying the```selected_artists```selected_artists list in the code. Replace the existing list with the names of the artists you want to compare, and the code will generate visualizations based on your selections.
+You can easily input your own artists for comparison by modifying the ```selected_artists``` list in the code. Replace the existing list with the names of the artists you want to compare, and the code will generate visualizations based on your selections.
