@@ -5,6 +5,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import random
+import os
 
 # Load the data from the CSV file
 data = pd.read_csv('artists.csv', index_col='Artist')
@@ -71,6 +72,9 @@ for stream_type in stream_types:
     chart_type = 'bar' if stream_type in ['Streams', 'Daily'] else 'line'
 
     add_razzle_dazzle(ax, chart_type, stream_type)
+
+    # Create the "charts" directory if it doesn't exist
+    os.makedirs('charts', exist_ok=True)
 
     # Save the plot as an image
     savefile = f"charts/{stream_type}Streams_{chart_type}.png"
